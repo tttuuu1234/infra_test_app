@@ -10,6 +10,7 @@ jobs:
     working_directory: ~/ci-demo
     steps:
       - checkout
+      - run: ls
       - run:
           name: Update apt-get
           command: sudo apt-get update
